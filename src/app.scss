@@ -1,0 +1,11 @@
+.block-nav{
+    &__body{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+    }
+    &__content{
+        flex: 1 1 70%;
+    }
+}

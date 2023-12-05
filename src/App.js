@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import './app.scss';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Home } from "./pages/Home";
+
+import { MainLayout } from './components/MainLayout';
+import { Clients } from './pages/Clients';
+import { Categories } from './pages/Categories';
+import { Cities } from './pages/Cities';
+import { Banners } from './pages/Banners';
+import { Seminars } from './pages/Seminars';
+import { Promocode } from './pages/Promocode';
+import { Protocols } from './pages/Protocols';
+import { Orders } from './pages/Orders';
+import { Brands } from './pages/Brands';
+import { Products } from './pages/Products';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+   
+        <Routes>
+          <Route path='/' element={<MainLayout />}>
+            <Route path="" element={<Home />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/clients" element={<Clients />} />
+            <Route path="/categories" element={<Categories />} />
+            <Route path="/cities" element={<Cities />} />
+            <Route path="/brands" element={<Brands />} />
+            <Route path="/protocols" element={<Protocols />} />
+            <Route path="/orders" element={<Orders />} />
+            <Route path="/banners" element={<Banners />} />
+            <Route path="/seminars" element={<Seminars />} />
+            <Route path="/promocode" element={<Promocode />} />
+          </Route>
+        </Routes>
+   </BrowserRouter>
   );
 }
-
 export default App;
