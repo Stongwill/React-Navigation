@@ -1,0 +1,51 @@
+.modal-delete{
+    width: 475px;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 0px 1px 0px rgba(76, 93, 112, 0.30), 0px 4px 8px 0px rgba(76, 93, 112, 0.30);
+    margin-top: auto;
+    &__body{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        gap: 26px;   
+        justify-content: center;
+        padding: 16px 30px 18px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    &__text{
+        color: rgba(0, 0, 0, 0.40);
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    &__btn{
+        position: relative;
+        color: #999;
+        font-size: 16px;
+        line-height: 1.5;
+
+        &::after{
+            content: '';
+            position: absolute;
+            left: -24px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            width: 16px;
+            height: 16px;
+            background: url('../../images/delete.svg') 0 0 / cover no-repeat;
+        }
+    }
+
+    &__close-btn{
+        position: absolute;
+        right: 8px;
+        top: 8px;
+    }
+}

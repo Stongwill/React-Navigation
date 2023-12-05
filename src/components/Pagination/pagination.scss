@@ -1,0 +1,114 @@
+.table{
+    &__pagination{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        justify-content: flex-end;
+    }
+    &__show{
+        position: relative;
+        display: flex;
+        gap: 8px;
+        align-items: center;
+    }
+    &__text-show{
+        
+    }
+    &__select{
+        border-radius: 4px;
+        border: 1px solid  #D0D3DA;
+        background:  #FFF;
+        position: relative;
+        line-height: 1.4;
+        color: #434652;
+        font-size: 13px;
+        line-height: 1.5;
+        padding: 6px 24px 6px 8px;
+
+        svg {
+            position: absolute;
+            right: 4px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+    }
+
+    &__option-body{
+        display: none;
+        
+        &.active{
+            display: flex;
+            position: absolute;
+            right: 0;
+            padding: 6px 21px 6px 8px;
+            bottom: -105px;
+            background-color: #fff;
+            border: 1px solid #D0D3DA;
+            border-radius: 4px;
+            flex-direction: column;
+            gap: 5px;
+        }
+    }
+
+    &__option{
+        background-color: transparent;
+        border: none;
+        font-size: 13px;
+    }
+    &__page{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    &__page-wrapper{
+        display: flex;
+        gap: 4px;
+        align-items: center;
+        input{
+            outline: none;
+            width: 42px;
+            text-align: center;
+            border-radius: 4px;
+            border: 1px solid #D8DAE0;
+            background:  #FFF;
+            line-height: 1.4;
+            padding: 6px 0;
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button{
+                -webkit-appearance: none;
+                margin: 0;
+            }
+        }
+        span{
+            color: #BCBFCC;
+            line-height: 1.4;
+        }
+    }
+    &__buttons-nav{
+
+    }
+}
+
+.nav-page{
+    &__btn {
+        padding: 7px;
+        height: 32px;
+        border-radius: 0px 4px 4px 0px;
+        border: 1px solid#D0D3DA;
+        background:  #F8F8FA;
+
+        svg {
+          
+        }
+
+    }
+    &__next{
+      svg{
+        transform: rotate(180deg);
+      }
+    }
+    &__prev{
+        border-radius: 4px 0px 0px 4px;
+    }
+}

@@ -37,14 +37,14 @@ $itemActive: #C06ECC;
                }
             }
         }
-       
+        svg{
+            position: absolute;
+            left: 16px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            fill: #000;
+        }
     }
-    svg{
-        position: absolute;
-        left: 16px;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-        fill: #000;
-    }
+  
 }

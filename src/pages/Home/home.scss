@@ -1,0 +1,23 @@
+.table{
+    padding-top: 114px;
+    &__body{
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    &__btn-add{
+      color: #fff;
+      padding: 8px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.5;
+      border-radius: 8px;
+      border: 1px solid #BD68CA;
+      background-color: #C06ECC;
+      transition: all .3s;
+  
+      &:hover {
+        background-color: #bc52cc;
+      }
+    }
+  }
